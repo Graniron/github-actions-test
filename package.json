@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Graniron/github-actions-test/issues"
   },
-  "homepage": "https://github.com/Graniron/github-actions-test#readme"
+  "homepage": "https://github.com/Graniron/github-actions-test#readme",
+  "dependencies": {
+    "now": "^16.2.0"
+  }
 }
