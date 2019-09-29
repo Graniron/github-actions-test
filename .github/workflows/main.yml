@@ -20,5 +20,6 @@ jobs:
 
     - name: Deploy
       run: |
+        npm -v
         npm i
         now --token ${{ secrets.NOW_TOKEN }}
