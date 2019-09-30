@@ -3,13 +3,12 @@ name: Deploy
 on: [push]
 
 jobs:
-  build:
-    name: Greeting
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
-    - name: Deploy
       run: |
         npm i
         now --token ${{ secrets.NOW_TOKEN }}
