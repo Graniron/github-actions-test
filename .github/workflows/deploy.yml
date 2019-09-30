@@ -1,4 +1,4 @@
-name: CI
+name: Deploy
 
 on: [push]
 
@@ -9,13 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Echo the greeting's time
-      run: echo 'The time was ${{ steps.hello.outputs.time }}.'
-
-
     - name: Deploy
       run: |
-        ls
-        npm -v
         npm i
         now --token ${{ secrets.NOW_TOKEN }}
