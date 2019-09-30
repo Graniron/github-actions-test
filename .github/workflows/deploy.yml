@@ -9,6 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Install Dependencies && Deploy
       run: |
         npm i
         now --token ${{ secrets.NOW_TOKEN }}
